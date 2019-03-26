@@ -22,17 +22,6 @@ nav ul {
 
 }
 
-nav li #title {
-  display: inline-block;
-  color: white;
-  text-align: left;
-  padding: 9px 16px;
-  margin-left: 2px;
-  font-size: 1.4em;
-  
-  text-decoration: none;
-}
-
 nav li {
   background-color: rgb(44, 44, 44);
   
@@ -51,11 +40,23 @@ nav li a {
 
 }
 
+
 nav li a:hover {
   background-color: #111;
   color: white;
 
   box-shadow: inset 0px -2px #0FA0CE;
+}
+
+nav li #title {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 9px 16px;
+  margin-left: 2px;
+  font-size: 1.4em;
+  
+  text-decoration: none;
 }
 
 /* Nav behavior on mobile */
