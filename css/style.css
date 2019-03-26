@@ -91,4 +91,8 @@ nav li #title {
     background-color: #555;
     color: white;
   }
+
+  * {
+    touch-action: manipulation;
+  }
 }
