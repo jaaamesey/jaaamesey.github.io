@@ -92,7 +92,5 @@ nav li #title {
     color: white;
   }
 
-  * {
-    touch-action: manipulation;
-  }
+
 }
