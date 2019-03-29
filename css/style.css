@@ -59,11 +59,17 @@ nav li #title {
   text-decoration: none;
 }
 
+#mobile_break {
+  display: none;
+}
+
 /* Nav behavior on mobile */
 @media (max-width: 650px) {
   nav {
     position: relative;
     background-color: rgb(44, 44, 44);
+    width: 100%;
+    height: 170px;
   }
   nav ul {
 
@@ -72,7 +78,7 @@ nav li #title {
     padding: 0;
     height: 100px;
     background-color: rgb(44, 44, 44);
-
+    width: 316px;
     
   }
   
@@ -92,5 +98,21 @@ nav li #title {
     color: white;
   }
 
+  #mobile_break {
+    /*TODO: Do something with this*/
+  }
+
 
 }
+
+@media (max-width: 490px) {
+  nav ul {
+
+    height: 170px;
+    width: 316px;
+    
+  }
+
+
+}
+
