@@ -173,7 +173,7 @@ footer {
   transform: scaleX(10000);
   overflow: hidden;
   height: 30px;
-  border-bottom: 1px solid black;        /* Opera/IE 8+ */
+  border-bottom: 4px solid #18181a;        /* Opera/IE 8+ */
 }
 footer p {
   color: white;
