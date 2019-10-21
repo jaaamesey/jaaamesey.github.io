@@ -285,7 +285,6 @@
       </div>
     </div>
     <script>
-      // Wrap every letter in a span
       function checkVisible(elm) {
         var rect = elm.getBoundingClientRect();
         var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
@@ -300,10 +299,17 @@
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
       }
 
-      // Update scroll `target`, and start the animation if it is not running already
-      function updateScroll() {
-        var skillsAnchor = document.getElementById('skills');
+      var lastTarget = 0;
+      function updateScroll(force = false) {
+        if (force) {
+          lastTarget = -999999;
+        }
+        
         target = window.scrollY || window.pageYOffset
+        if (Math.abs(target - lastTarget) < 100) {
+          return;
+        }
+        lastTarget = target;
 
         for (var i = 0; i < headers.length; i++) {
           if (checkVisible(headers[i])) {
@@ -330,11 +336,17 @@
           }
         }
       }
-      window.addEventListener('scroll', updateScroll)
+      function forceUpdateScroll() {
+        updateScroll(true)
+      }
+      function regUpdateScroll() {
+        updateScroll(false)
+      }
+      window.addEventListener('scroll', regUpdateScroll)
       window.addEventListener('load', (event) => {
-        updateScroll()
-        updateScroll()
-        setTimeout(updateScroll, 1000);
+        forceUpdateScroll();
+        forceUpdateScroll();
+        setTimeout(forceUpdateScroll, 1000);
       });
     </script>
 
