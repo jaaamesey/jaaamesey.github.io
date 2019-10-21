@@ -210,8 +210,7 @@ nav img {
   }
 }
 
-/* Nav behavior on mobile */
-@media (max-width: 800px) {
+@media (max-width: 836px) {
   body {
     position: relative;
     width: 100vw;
