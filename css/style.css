@@ -189,7 +189,8 @@ nav img {
 }
 
 #charryt-video {
-  width: 240px;
+  height: 442px;
+  width: auto;
 }
 
 #charryt-content {
@@ -306,6 +307,7 @@ nav img {
 
   #charryt-video {
     width: 100%;
+    height: auto;
   }
   
   #charryt-content {
