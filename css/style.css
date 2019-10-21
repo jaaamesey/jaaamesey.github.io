@@ -179,13 +179,23 @@ footer p {
   color: white;
   transform: translateY(3px) scaleX(0.0001);
   background-color: #18181a;
-  text-align: end;
+  text-align: right;
 }
 
 nav img {
   height:10px;
   width:10px;
   opacity: 0.9;
+}
+
+@media screen\0 {
+  .container {
+    opacity: 1 !important;
+  }
+  
+  .content {
+    opacity: 1 !important;
+  }
 }
 
 /* Nav behavior on mobile */
