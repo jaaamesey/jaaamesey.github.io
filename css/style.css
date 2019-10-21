@@ -170,7 +170,7 @@ footer {
   background-color: #18181a;
   position: relative;
   width: 100%;
-  transform: scaleX(10000);
+  transform: scaleX(10000) translateY(3px);
   overflow: hidden;
   height: 30px;
   border-bottom: 4px solid #18181a;        /* Opera/IE 8+ */
