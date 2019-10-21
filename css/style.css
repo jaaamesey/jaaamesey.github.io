@@ -1,51 +1,81 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  overflow-y: hidden
+}
+
+.anchor {
+  padding-top: 64px;
+}
+
 nav {
   width: 100%;
   position: fixed;
   z-index: 9999;
   height: 52px;
-  background-color: rgb(44, 44, 44);
-
+  background-color: #18181a;
+  border-bottom: #18181a solid 2px;
   box-shadow: 0px -10px 24px;
 }
+
+.anchor {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 nav ul {
-  
+
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
 
-  background-color: rgb(44, 44, 44);
+
+  background-color: #18181a;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+
 
 }
 
 nav li {
-  background-color: rgb(44, 44, 44);
-  
+  background-color: #18181a;
+
   float: left;
 }
 
 nav li a {
-  background-color: rgb(44, 44, 44);
+  background-color: #18181a;
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   width: auto;
-  
+
   text-decoration: none;
 
 }
 
 
-nav li a:hover, nav li a:focus {
-  background-color: #111;
+nav li a:hover,
+nav li a:focus {
+  background-color: #18181a;
   color: white;
 
-  box-shadow: inset 0px -2px #0FA0CE;
+  /*text-decoration: rgb(32, 203, 255) underline;*/
+  text-decoration: white underline;
 }
 
 nav li #title {
@@ -55,7 +85,8 @@ nav li #title {
   padding: 9px 16px;
   margin-left: 2px;
   font-size: 1.4em;
-  
+  font-weight: 420;
+
   text-decoration: none;
 }
 
@@ -63,56 +94,197 @@ nav li #title {
   display: none;
 }
 
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+#skills .container {
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+}
+
+#projects .content {
+  opacity: 0;
+}
+
+.skill {
+  width: 24%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.project-description {
+  padding-bottom: 60px;
+}
+
+.text-anim .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.text-anim .letter {
+  display: inline-block;
+  opacity: 0;
+  line-height: 1em;
+}
+
+video {
+  padding-bottom: 16px;
+}
+
+#projects ul {
+  top: 0;
+  display: inline-flex;
+}
+
+#projects li {
+  padding-right: 20px
+}
+
+#projects p {
+  margin-block-end: 0.5em;
+}
+
+#projects .content a {
+  line-height: 2.5em;
+}
+
+#hsc-english-container {
+  display: inline-flex; 
+  flex-direction: row
+}
+
+footer {
+  background-color: #18181a;
+  position: relative;
+  width: 100%;
+  transform: scaleX(10000);
+  overflow: hidden;
+  height: 30px;
+  border-bottom: 1px solid black;        /* Opera/IE 8+ */
+}
+footer p {
+  color: white;
+  transform: translateY(3px) scaleX(0.0001);
+  background-color: #18181a;
+  text-align: end;
+}
+
+nav img {
+  height:10px;
+  width:10px;
+  opacity: 0.9;
+}
+
 /* Nav behavior on mobile */
-@media (max-width: 650px) {
+@media (max-width: 800px) {
+  body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li #title {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+
   nav {
     position: relative;
-    background-color: rgb(44, 44, 44);
     width: 100%;
-    height: 170px;
+    padding-bottom: 60px;
+    background-color: #18181a;
+    height: 100px;
   }
-  nav ul {
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 100px;
-    background-color: rgb(44, 44, 44);
-    width: 316px;
-    
+    padding-bottom: 30px;
+    width: 100%;
   }
-  
+
+  nav li {
+    width: 100%;
+    padding-bottom: 3px;
+  }
+
   nav li a {
     display: inline-block;
     color: white;
-    padding: 8px 16px;
+    padding: 0;
     text-decoration: none;
+    width: 100%;
   }
-  
+
   nav li a.active {
     color: white;
   }
-  
+
   nav li a:hover:not(.active) {
-    background-color: #555;
     color: white;
   }
 
   #mobile_break {
-    /*TODO: Do something with this*/
+    display: block;
+    height: 135px;
   }
 
-
-}
-
-@media (max-width: 490px) {
-  nav ul {
-
-    height: 170px;
-    width: 316px;
-    
+  nav li a:hover,
+  nav li a:focus {
+    background-color: #18181a;
+    color: white;
   }
 
+  .skill {
+    width: 100%;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+
+  .anchor {
+    padding-top: 10px;
+  }
+
+  #about-me {
+    width: 100%
+  }
+
+  #hsc-english-container {
+    display: block;
+  }
+  #hsc-english-container iframe {
+    width: 100% !important;
+  }
+  #projects ul {
+    display: block;
+  }
+
+  #play-badge {
+    width: 200px;
+  }
 
 }
-
