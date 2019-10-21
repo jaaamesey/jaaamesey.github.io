@@ -174,7 +174,7 @@
             spellchecker, a feature that has demonstrated itself to be extremely convenient when writing more long-form
             content.
           </p>
-          <a href="/projects/dialogue-editor-demo/index.html">Web Version</a> (May be slow)<br>
+          <a href="/projects/dialogue-editor-demo/index.html">Web Version</a> (may be slow)<br>
           <a href="/projects/dialogue-editor-demo/editor.exe">Windows Executable</a><br>
           <a href="https://github.com/jaaamesey/dialogueeditor">Source Code</a><br>
 
@@ -182,30 +182,34 @@
         </div>
         <div class="project-description">
           <h5>Mobile Charity App</h5>
-          <video autoplay muted onloadedmetadata="this.muted = true" controls loop>
-            <source src="videos/charryt.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-
-          <p>Built with:</p>
-          <ul>
-            <li>Android Studio</li>
-            <li>Java</li>
-            <li>Firebase</li>
-          </ul>
-          <p>
-            CharryT is an Android application connecting prospective donors to charity communities.
-            Users can create item listings, arrange bookings, and send messages to each other. This project was
-            developed
-            as part of group university coursework, in which we were assessed on our ability to adhere to agile
-            principles
-            and practices.
-          </p>
-          <br>
+          <div id="charryt-content">
+            <video id="charryt-video" autoplay muted onloadedmetadata="this.muted = true" controls loop>
+              <source src="videos/charryt.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>
+                <br>
+              Built with:<br>
+              ◦ &nbsp;&nbsp;Android Studio <br>
+              ◦ &nbsp;&nbsp;Java <br>
+              ◦ &nbsp;&nbsp;Firebase<br><br>
+              CharryT is an Android application connecting prospective donors to charity communities.
+              Users can create item listings, arrange bookings, and send messages to each other. This project was
+              developed
+              as part of group university coursework, in which we were assessed on our ability to adhere to agile
+              principles
+              and practices.
+              <br>
+              <br>
           <a href="https://play.google.com/store/apps/details?id=com.group5.charryt&hl=en"><img id="play-badge"
               src="images/google-play-badge.png" width="150px"></a>
           <a href="https://github.com/jaaamesey/CharryT"
             style="display: inherit; transform: translate(180px, -55px)">Source Code</a>
+            </p>
+          </div>
+                      
+          
+          
         </div>
 
         <div class="project-description">
@@ -275,7 +279,8 @@
       <h4 class="text-anim"><span class="text-wrapper"><span class="letters">Contact Me</span></span></h4>
       <div class="content" style="opacity: 0">
         <p>
-          Interested? You can view my resume by clicking <a href="/Resume - James Karlsson.pdf" >here</a>, or contact me directly at <a href="mailto:jameskarlsson1@gmail.com" >jameskarlsson1@gmail.com</a>.
+          Interested? You can view my resume by clicking <a href="/Resume - James Karlsson.pdf">here</a>, or contact me
+          directly at <a href="mailto:jameskarlsson1@gmail.com">jameskarlsson1@gmail.com</a>.
         </p>
         <br>
         <br>
@@ -300,11 +305,12 @@
       }
 
       var lastTarget = 0;
+
       function updateScroll(force = false) {
         if (force) {
           lastTarget = -999999;
         }
-        
+
         target = window.scrollY || window.pageYOffset
         if (Math.abs(target - lastTarget) < 100) {
           return;
@@ -336,9 +342,11 @@
           }
         }
       }
+
       function forceUpdateScroll() {
         updateScroll(true)
       }
+
       function regUpdateScroll() {
         updateScroll(false)
       }
@@ -351,9 +359,10 @@
     </script>
 
 </body>
-<footer><p>
+<footer>
+  <p>
     &copy; Copyright James Karlsson 2019
-</p>
+  </p>
 </footer>
 
 </html>

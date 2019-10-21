@@ -188,6 +188,17 @@ nav img {
   opacity: 0.9;
 }
 
+#charryt-video {
+  width: 240px;
+}
+
+#charryt-content {
+  display: flex;
+}
+#charryt-content p {
+  padding-left: 20px;
+}
+
 @media screen\0 {
   .container {
     opacity: 1 !important;
@@ -293,8 +304,18 @@ nav img {
     display: block;
   }
 
+  #charryt-video {
+    width: 100%;
+  }
+  
+  #charryt-content {
+    display: block;
+  }
+  #charryt-content p {
+    padding-left: 0px;
+  }
   #play-badge {
-    width: 200px;
+    width: 150px;
   }
 
 }
