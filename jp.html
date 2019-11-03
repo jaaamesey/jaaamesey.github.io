@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>James Karlsson</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet" type="text/css">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+</head>
+
+<body id="top">
+  <nav>
+    <ul>
+      <a href="#top">
+        <li>
+          <div id="title">James Karlsson</div>
+        </li>
+      </a>
+
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/jaaamesey/">GitHub <img src="images/ext.svg"></a></li>
+      <li><a href="Resume - James Karlsson.pdf">Resume <img src="images/ext.svg"></a></li>
+    </ul>
+
+  </nav>
+  <div id="mobile_break"> <br></div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div id="about-me" class="one-half column anchor" style="margin-top: 40px">
+        <h4>About</h4>
+        <p>
+          こんにちは。ジェイミーと申します。UTSでソフトを勉強します。フロントエンドとバックエンド開発者です。これは私のポートフォリオです。
+          <br><br>
+
+        </p>
+      </div>
+
+    </div>
+    <br>
+
+    <div id="skills" class="anchor">
+      <h4 class="text-anim"><span class="text-wrapper"><span class="letters">Skills</span></span></h4>
+      <div id="skills" class="container content">
+        <div class="skill">
+          <h5>Frontend</h5>
+          Angular<br>
+          React<br>
+          Bootstrap<br>
+          JQuery<br>
+        </div>
+        <div class="skill">
+          <h5>Backend</h5>
+          ASP.NET<br>
+          NodeJS<br>
+          SQL<br>
+          Firebase<br>
+        </div>
+        <div class="skill">
+          <h5>Native</h5>
+          C++<br>
+          Android<br>
+          JavaFX<br>
+          Unity<br>
+          Python<br>
+        </div>
+        <div class="skill">
+          <h5>Other</h5>
+          Git<br>
+          Azure<br>
+          UNIX<br>
+          Blender<br>
+          Photoshop<br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="projects" class="anchor">
+      <h4 class="text-anim"><span class="text-wrapper"><span class="letters">Projects</span></span></h4>
+      <div class="content">
+
+        <div class="project-description">
+          <h5>Single Page Ecommerce Website</h5>
+          <video autoplay muted onloadedmetadata="this.muted = true" controls loop>
+            <source src="videos/store.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p>Built with:
+            <ul>
+              <li>Angular</li>
+              <li>Bootstrap</li>
+              <li>ASP.NET Core</li>
+              <li>Microsoft Azure SQL</li>
+              <li>Microsoft Azure DevOps</li>
+            </ul>
+            <p>
+              NotAmazon.com is a fictional online tech store where customers can browse and purchase items from a
+              variety
+              of sellers.
+              The site consists of a customer-facing view, a seller-facing view, and an administrator-facing view, all
+              three of which being fully functional.
+              The site provides all of the features expected from a modern ecommerce website, including search,
+              messaging
+              between customers and sellers, and item recommendations.
+              Transactions are handled securely through the PayPal API, and the backend makes use of the Argon2
+              algorithm
+              for password hashing.
+            </p>
+            <a href="https://studio1btask.azurewebsites.net/">Live Demo</a> (may take a while for the server and
+            database to
+            fire up initially)
+        </div>
+
+
+
+
+        <div class="project-description">
+          <h5>Graph Based Dialogue Editor</h5>
+          <video autoplay muted onloadedmetadata="this.muted = true" controls loop>
+            <source src="videos/editor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p>Built with:</p>
+          <ul>
+            <li>Godot</li>
+            <li>C# (Mono)</li>
+          </ul>
+          <p>
+            This project is a graph based dialogue editor created to streamline the writing of dialogue for interactive
+            fiction and other applications.
+            Scenes can be exported to JSON, and individual story paths can be exported to a format similar to that of a
+            film script. Custom attributes can be created, such as for background images or audio cues, to allow for
+            more
+            seamless integration with the target application upon export. The application also features a robust
+            spellchecker, a feature that has demonstrated itself to be extremely convenient when writing more long-form
+            content.
+          </p>
+          <a href="/projects/dialogue-editor-demo/index.html">Web Version</a> (may be slow)<br>
+          <a href="/projects/dialogue-editor-demo/editor.exe">Windows Executable</a><br>
+          <a href="https://github.com/jaaamesey/dialogueeditor">Source Code</a><br>
+
+
+        </div>
+        <div class="project-description">
+          <h5>Mobile Charity App</h5>
+          <div id="charryt-content">
+            <video id="charryt-video" autoplay muted onloadedmetadata="this.muted = true" controls loop>
+              <source src="videos/charryt.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>
+                <br>
+              Built with:<br>
+              ◦ &nbsp;&nbsp;Android Studio <br>
+              ◦ &nbsp;&nbsp;Java <br>
+              ◦ &nbsp;&nbsp;Firebase<br><br>
+              CharryT is an Android application connecting prospective donors to charity communities.
+              Users can create item listings, arrange bookings, and send messages to each other. This project was
+              developed
+              as part of group university coursework, in which we were assessed on our ability to adhere to agile
+              principles
+              and practices.
+              <br>
+              <br>
+          <a href="https://play.google.com/store/apps/details?id=com.group5.charryt&hl=en"><img id="play-badge"
+              src="images/google-play-badge.png" width="150px"></a>
+          <a href="https://github.com/jaaamesey/CharryT"
+            style="display: inherit; transform: translate(180px, -55px)">Source Code</a>
+            </p>
+          </div>
+                      
+          
+          
+        </div>
+
+        <div class="project-description">
+          <h5>Networked Physics Tech Demo</h5>
+          <video autoplay muted onloadedmetadata="this.muted = true" controls loop>
+            <source src="videos/demo2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <p>Built with:</p>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+          <p>
+            This project is a real-time networked physics demo where multiple clients control and interact with physics
+            objects in
+            a shared physics environment.
+            Various interpolation and client authority swapping techniques were used to make physics interactions seem
+            smooth and instantaneous across all clients, even with latency of up to 1000ms. This video shows clients
+            approximately 350ms away from the host still experiencing smooth, consistent, and responsive movement, far
+            higher than what is considered optimal for most applications making use of real-time networked physics.
+          </p>
+          <a href="https://drive.google.com/file/d/1_GRtlSV-Krld5VH_kBy-9XaCfDBHR5WO/view?usp=sharing">Windows
+            Executable</a><br>
+          <a href="https://github.com/jaaamesey/networked-physics-demo">Source Code</a><br>
+        </div>
+
+        <div class="project-description">
+          <h5>HSC English Twitter/Facebook Bot</h5>
+
+          <div id="hsc-english-container">
+            <div style="padding-right: 30px">
+              <img width="500px" src="images/english3.jpg"><br>
+              <img width="500px" src="images/english.jpg"><br>
+              <img width="500px" src="images/english2.jpg">
+            </div>
+
+            <span>
+              <a class="twitter-timeline" data-height="500" data-width="300" data-theme="light"
+                href="https://twitter.com/HSCEnglishBot?ref_src=twsrc%5Etfw">Tweets by HSCEnglishBot</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+          </div>
+          <p>Built with:</p>
+          <ul>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
+            <li>Twitter API</li>
+            <li>Facebook API</li>
+          </ul>
+          <p>
+            HSCEnglishBot is an AI that generates an extended response question for NSW HSC English every hour, and
+            posts
+            it directly to both Twitter and Facebook using their respective APIs. Unfortunately, the servers for this
+            bot
+            are no longer up, but its original Twitter page is still available for viewing some of the shorter
+            questions.
+          </p>
+          <a href="https://twitter.com/hscenglishbot">Twitter Page</a><br>
+          <a href="https://github.com/jaaamesey/hscenglishbot">Source Code</a><br>
+        </div>
+
+      </div>
+    </div>
+    <div id="contact" class="anchor">
+      <h4 class="text-anim"><span class="text-wrapper"><span class="letters">Contact</span></span></h4>
+      <div class="content" style="opacity: 0">
+        <p>
+          Interested? You can view my resume by clicking <a href="/Resume - James Karlsson.pdf">here</a>, or contact me
+          directly at <a href="mailto:jameskarlsson1@gmail.com">jameskarlsson1@gmail.com</a>.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <script>
+      function checkVisible(elm) {
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+      }
+
+      var headers = Array.prototype.slice.call(document.getElementsByClassName("anchor"));
+      for (var i = 0; i < headers.length; i++) {
+        var textWrapper = document.querySelector('#' + headers[i].id + ' .letters');
+        if (textWrapper == null)
+          continue;
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      }
+
+      var lastTarget = 0;
+
+      function updateScroll(force = false) {
+        if (force) {
+          lastTarget = -999999;
+        }
+
+        target = window.scrollY || window.pageYOffset
+        if (Math.abs(target - lastTarget) < 100) {
+          return;
+        }
+        lastTarget = target;
+
+        for (var i = 0; i < headers.length; i++) {
+          if (checkVisible(headers[i])) {
+            var letterAnim = anime({
+              targets: '#' + headers[i].id + ' .letter',
+              opacity: 1,
+              translateY: ["1.1em", 0],
+              translateZ: 0,
+              duration: 750,
+              delay: (el, i) => 50 * i,
+              autoplay: false
+            });
+            var containerAnim = anime({
+              targets: '#' + headers[i].id + ' .content',
+              opacity: [0, 1],
+              easing: 'linear',
+              duration: 1000,
+              autoplay: false
+            });
+            setTimeout(letterAnim.play, 500);
+            setTimeout(containerAnim.play, 800);
+            headers.splice(i, 1);
+            break;
+          }
+        }
+      }
+
+      function forceUpdateScroll() {
+        updateScroll(true)
+      }
+
+      function regUpdateScroll() {
+        updateScroll(false)
+      }
+      window.addEventListener('scroll', regUpdateScroll)
+      window.addEventListener('load', (event) => {
+        forceUpdateScroll();
+        forceUpdateScroll();
+        setTimeout(forceUpdateScroll, 1000);
+      });
+    </script>
+
+</body>
+<footer>
+  <p>
+    &copy; Copyright James Karlsson 2019
+  </p>
+</footer>
+
+</html>
